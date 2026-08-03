@@ -1,0 +1,42 @@
+/* calendar-dark.css */
+.full-calendar {
+  width: 100%;
+  height: 100%;
+  background: #111;
+  color: #eee;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+.full-calendar .react-calendar__viewContainer {
+  flex: 1;
+}
+
+.full-calendar .react-calendar__month-view__days {
+  height: 100%;
+}
+
+.full-calendar .react-calendar__tile {
+  background: #111;
+  color: #eee;
+  height: auto;
+}
+
+.full-calendar .react-calendar__tile:hover {
+  background: #333;
+}
+
+.full-calendar .react-calendar__tile--active {
+  background: #2563eb !important;
+}
+
+.full-calendar .react-calendar__navigation button {
+  color: #eee;
+  background: #111;
+}
+
+.full-calendar .react-calendar__navigation button:hover {
+  background: #333;
+}

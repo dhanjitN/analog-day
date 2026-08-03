@@ -74,18 +74,8 @@ export default function AuthForm() {
   const isLogin = mode === "login";
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-950 p-4 transition-colors">
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-950  transition-colors">
       <Toaster richColors position="top-right" />
-
-      <button
-        type="button"
-        onClick={() => setDark((d) => !d)}
-        aria-label="Toggle dark mode"
-        className="fixed top-4 left-4 inline-flex items-center justify-center h-9 w-9 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
-      >
-        {dark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-      </button>
-
       <div className="w-full max-w-sm rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm">
         <div className="p-6 pb-4">
           <h1 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
