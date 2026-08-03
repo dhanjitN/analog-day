@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, Outlet } from 'react-router'
 import AuthForm from './pages/Login.jsx'
 import { CalendarView } from './pages/Calendar/Calendar.js'
 import Navbar from './components/NavBar/Navbar.jsx'
+import { PlanPage } from './pages/Plan.jsx'
 
 function Layout() {
   return (
@@ -24,6 +25,7 @@ createRoot(document.getElementById('root')).render(
           <Route path='/' element={<App />}></Route>
           <Route path='/login' element={<AuthForm />}></Route>
           <Route path='/home' element={<CalendarView />}></Route>
+          <Route path='/day/:date' element={<PlanPage />}></Route>
         </Route>
       </Routes>
 
