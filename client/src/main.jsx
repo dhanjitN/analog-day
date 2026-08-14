@@ -22,7 +22,7 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
-          <Route path='/' element={<App />}></Route>
+          <Route path='/' element={<CalendarView />}></Route>
           <Route path='/login' element={<AuthForm />}></Route>
           <Route path='/home' element={<CalendarView />}></Route>
           <Route path='/day/:date' element={<PlanPage />}></Route>
